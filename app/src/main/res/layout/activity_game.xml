@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/game_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_bottom"
+    tools:context=".GameActivity">
+
+    <com.game.beaters.game.GameView
+        android:id="@+id/gameView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--
+        HUD superior izquierdo: boton de pausa + puntaje.
+        Se dibuja por encima del GameView (FrameLayout = ultimo hijo arriba).
+    -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_gravity="start|top"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp">
+
+        <ImageButton
+            android:id="@+id/btnPause"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_media_pause"
+            android:contentDescription="@string/game_pause_button_desc"
+            android:tint="@color/hud_text" />
+
+        <TextView
+            android:id="@+id/hudScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/hud_text"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:shadowColor="@color/black"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="8"
+            android:layout_marginStart="8dp"
+            tools:text="Puntaje: 0" />
+
+    </LinearLayout>
+
+    <!-- Progreso de notas verdes acertadas, a la derecha del puntaje. -->
+    <TextView
+        android:id="@+id/hudProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/hud_accent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_gravity="end|top"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="22dp"
+        tools:text="0 / 20" />
+
+    <!-- Combo flotante un poco mas abajo para no pisar el progreso. -->
+    <TextView
+        android:id="@+id/hudCombo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/hud_accent"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="end|top"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="52dp"
+        tools:text="x8" />
+
+</FrameLayout>

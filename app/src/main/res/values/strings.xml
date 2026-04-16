@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Beaters</string>
+
+    <!-- Main menu -->
+    <string name="menu_play">Jugar</string>
+    <string name="menu_scores">Puntajes altos</string>
+    <string name="menu_exit">Salir</string>
+    <string name="menu_subtitle">Juego de ritmo musical</string>
+
+    <!-- Difficulty -->
+    <string name="difficulty_title">Elegí dificultad</string>
+    <string name="difficulty_easy">Fácil</string>
+    <string name="difficulty_medium">Media</string>
+    <string name="difficulty_hard">Difícil</string>
+    <string name="difficulty_easy_desc">Notas lentas, pocas trampas</string>
+    <string name="difficulty_medium_desc">Velocidad normal, trampas moderadas</string>
+    <string name="difficulty_hard_desc">Rápido y con muchas trampas rojas</string>
+    <string name="difficulty_target_label">Notas verdes para terminar</string>
+    <string name="difficulty_target_hint">20</string>
+
+    <!-- Game -->
+    <string name="hud_score">Puntaje: %1$d</string>
+    <string name="hud_combo">x%1$d</string>
+    <string name="hud_progress">%1$d / %2$d</string>
+    <string name="game_pause_button_desc">Pausa</string>
+    <string name="game_pause_title">Pausa</string>
+    <string name="game_pause_resume">Reanudar</string>
+    <string name="game_pause_menu">Volver al menú</string>
+    <string name="game_over_title">Fin de la partida</string>
+    <string name="game_over_score">Puntaje final: %1$d</string>
+    <string name="game_over_new_record">¡Nuevo récord!</string>
+    <string name="game_over_retry">Reintentar</string>
+    <string name="game_over_menu">Menú</string>
+
+    <!-- Scores screen -->
+    <string name="scores_title">Top 3 por dificultad</string>
+    <string name="scores_empty">— sin puntajes —</string>
+    <string name="scores_back">Volver</string>
+    <string name="score_entry">%1$d. %2$d pts</string>
+</resources>

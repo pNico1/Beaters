@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Beaters" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/bg_bottom</item>
+        <item name="android:statusBarColor">@color/bg_top</item>
+    </style>
+
+    <style name="Theme.Beaters" parent="Base.Theme.Beaters" />
+
+    <!-- Fullscreen theme for gameplay -->
+    <style name="Theme.Beaters.Game" parent="Theme.Beaters">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

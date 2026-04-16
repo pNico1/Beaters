@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- El juego está pensado con paleta oscura siempre; replicamos los
+         mismos atributos que el tema de día para evitar que Material3 los
+         sobreescriba. -->
+    <style name="Base.Theme.Beaters" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/bg_bottom</item>
+        <item name="android:statusBarColor">@color/bg_top</item>
+    </style>
+</resources>
